@@ -204,10 +204,10 @@ if __name__ == '__main__':
     #'''
     data_collections = ['train', 'valid', 'test']
     for item in data_collections:    
-        args.data_dir = '/media/lonelyprince7/mydisk/NLP-dataset/bert_models/CLOTH/{}'.format(item)
+        args.data_dir = '/root/CLOTH/{}'.format(item)
         args.pre = args.post = 0
-        args.bert_model = '/media/lonelyprince7/mydisk/NLP-dataset/bert_models/bert-base-uncased-vocab.txt'
-        args.save_name = '/media/lonelyprince7/mydisk/NLP-dataset/bert_models/data/{}-bert-base-uncased.pt'.format(item)
+        args.bert_model ='/root/bert-base-uncased-vocab.txt'
+        args.save_name = '/root/data/{}-bert-base-uncased.pt'.format(item)
         data = Preprocessor(args)
     '''
     args.data_dir = './data/'
